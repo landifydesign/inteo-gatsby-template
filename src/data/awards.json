@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "../images/award-logos/german-design-award.svg",
+    "title": "German Design Award",
+    "year": "2021"
+  },
+  {
+    "logo": "../images/award-logos/a-design-award.svg",
+    "title": "Gold A’ Design Award",
+    "year": "2021"
+  },
+  {
+    "logo": "../images/award-logos/if-design-award.svg",
+    "title": "IF Design Award",
+    "year": "2020"
+  },
+  {
+    "logo": "../images/award-logos/good-design-award.svg",
+    "title": "Good Design Award",
+    "year": "2019"
+  }
+]

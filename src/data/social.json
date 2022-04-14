@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Instagram",
+    "icon": "../images/social-icons/instagram.svg",
+    "href": "#"
+  },
+  {
+    "name": "Facebook",
+    "icon": "../images/social-icons/facebook.svg",
+    "href": "#"
+  },
+  {
+    "name": "YouTube",
+    "icon": "../images/social-icons/youtube.svg",
+    "href": "#"
+  },
+  {
+    "name": "Twitter",
+    "icon": "../images/social-icons/twitter.svg",
+    "href": "#"
+  }
+]

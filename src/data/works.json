@@ -1,0 +1,17 @@
+[
+  {
+    "image": "../images/works/work-1.png",
+    "title": "Villa Furnishing & Interior",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/works/work-2.png",
+    "title": "Luxury Hotel Renovation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  },
+  {
+    "image": "../images/works/work-3.png",
+    "title": "Residence Swimming Pool",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam."
+  }
+]

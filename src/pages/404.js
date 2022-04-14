@@ -1,54 +1,26 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from "react";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import Button from "../components/button";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <Layout>
+      <Seo title="Page Not Found" />
+      <main className="container mx-auto">
+        <div className="flex flex-col items-center text-center lg:py-28 md:py-20 py-16">
+          <h1 className="font-display lg:text-display-2xl md:text-display-xl text-display-md md:pb-4 pb-2">
+            Page not found
+          </h1>
+          <p className="md:text-body-lg text-body-md pb-10 text-neutral-700">
+            The page you requested could not be found.
+          </p>
+          <Button link="/" label="BACK TO HOME" size="lg" icon={false} />
+        </div>
+      </main>
+    </Layout>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

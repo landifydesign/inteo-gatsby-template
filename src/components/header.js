@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link } from "react-scroll";
 
 import Logo from "../images/logos/logo-dark.svg";
 import Button from "./button";
 
 const Header = () => {
   const navigation = [
-    { name: "About", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Our Work", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Our Work", href: "#works" },
   ];
   return (
     <header>
@@ -22,12 +22,16 @@ const Header = () => {
           <div className="flex flex-row gap-6">
             <div className="md:flex hidden flex-row gap-4 items-center">
               {navigation.map((item) => (
-                <a
+                <Link
+                  spy={true}
+                  smooth={true}
+                  duration={500}
                   key={item.name}
-                  href={item.href}
-                  className="text-body-sm font-medium text-neutral-700 hover:text-primary-600 px-4">
+                  to={item.href}
+                  className="text-body-sm font-medium text-neutral-700 hover:text-primary-600 px-4 hover:cursor-pointer"
+                >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
             <Button label="CONTACT US" link="#" />

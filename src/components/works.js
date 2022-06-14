@@ -28,7 +28,7 @@ const Works = () => {
     }
   `);
   return (
-    <div>
+    <div id="#works">
       <div className="container mx-auto">
         <div className="flex flex-col gap-12 lg:py-28 md:py-24 py-12">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">

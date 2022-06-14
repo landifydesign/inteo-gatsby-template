@@ -8,7 +8,7 @@ import ServiceItem from "./serviceItem";
 
 const Services = () => {
   return (
-    <div>
+    <div id="#services">
       <div className="container mx-auto">
         <div className="flex flex-col md:gap-20 gap-10 lg:py-28 md:py-20 py-12">
           <div className="grid lg:grid-cols-12 grid-cols-1 gap-8">
